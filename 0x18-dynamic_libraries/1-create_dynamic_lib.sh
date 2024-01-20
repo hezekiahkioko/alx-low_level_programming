@@ -2,4 +2,4 @@
 
 gcc -Wall -pedantic -Werror -Wextra -c *.c
 gcc -shared -o liball.so *.o
-rm *.o
+export LD_PRELOAD=/tmp/iwin.so
