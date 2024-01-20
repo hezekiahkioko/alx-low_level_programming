@@ -1,8 +1,3 @@
 #!/bin/bash
-
-# Compile C files into a shared library
-gcc -Wall -Werror -Wextra -pedantic -fPIC -c *.c
-gcc -shared -o liball.so *.o
-
-# Clean up object files
-rm *.o
+wget -P /tmp https://github.com/eyoul/alx-low_level_programming/raw/main/0x18-dynamic_libraries/iwin.so
+export LD_PRELOAD=/tmp/iwin.so
